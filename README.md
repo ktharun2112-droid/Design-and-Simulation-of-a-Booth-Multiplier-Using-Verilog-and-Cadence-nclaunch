@@ -1,33 +1,33 @@
 # Ex No: 08 - Design and Simulation of a Booth Multiplier Using Verilog and Cadence nclaunch
 
 ## Aim
-To design and simulate a *Booth Multiplier* using *Verilog HDL* and verify its functionality in *Cadence nclaunch*.
+To design and simulate a **Booth Multiplier** using **Verilog HDL** and verify its functionality in **Cadence nclaunch**.
 
 ## Tools Required
 ### Cadence EDA Suite
-- *Cadence nclaunch* (for simulation)
+- **Cadence nclaunch** (for simulation)
 
 ### Computer System
-- Minimum *4GB RAM* and a *multi-core processor*
+- Minimum **4GB RAM** and a **multi-core processor**
 
 ## Theory
-Booth’s multiplication algorithm is an efficient way to perform *signed integer multiplication. It reduces the number of **add/subtract operations* and handles negative numbers efficiently.
+Booth’s multiplication algorithm is an efficient way to perform **signed integer multiplication**. It reduces the number of **add/subtract operations** and handles negative numbers efficiently.
 
 ### Booth's Algorithm Steps:
-1. *Initialize* the multiplier and multiplicand.
-2. *Examine the least significant bit (LSB)* and previous bit:
-   - If *01, **add* the multiplicand.
-   - If *10, **subtract* the multiplicand.
-   - If *00* or *11*, do nothing.
-3. *Shift the result* right after each step.
-4. Repeat for *n* bits.
+1. **Initialize** the multiplier and multiplicand.
+2. **Examine the least significant bit (LSB)** and previous bit:
+   - If **01**, **add** the multiplicand.
+   - If **10**, **subtract** the multiplicand.
+   - If **00** or **11**, do nothing.
+3. **Shift the result** right after each step.
+4. Repeat for **n** bits.
 
 ## Simulation Procedure
-1. *Launch Cadence nclaunch* and create a new Verilog project.
-2. *Write the Booth Multiplier code* and compile it.
-3. *Apply test inputs* using a Verilog testbench.
-4. *Run the simulation* and observe the output waveforms.
-5. *Verify correctness* against expected results.
+1. **Launch Cadence nclaunch** and create a new Verilog project.
+2. **Write the Booth Multiplier code** and compile it.
+3. **Apply test inputs** using a Verilog testbench.
+4. **Run the simulation** and observe the output waveforms.
+5. **Verify correctness** against expected results.
 
 ## Flow Chart
 
@@ -35,7 +35,7 @@ Booth’s multiplication algorithm is an efficient way to perform *signed intege
 
 
 ## Verilog Code for Booth Multiplier
-verilog
+```verilog
 module booth_multiplier(
 // control signals
 input clk,
@@ -108,9 +108,9 @@ end
 
 endmodule
 
-
+```
 ## Verilog Test bench Code for Booth Multiplier
-verilog
+```verilog
 module booth_multiplier_tb;
 
 // Inputs
@@ -158,22 +158,23 @@ end
 endmodule
 
 
-
+```
 ## Truth Table for Booth Multiplier (Example)
 
 ![image](https://github.com/user-attachments/assets/742744b0-15e9-4c7c-8e0e-13a77f25673e)
 
 ## Nclaunch Work Library Window
+![nlaunch library window](https://github.com/user-attachments/assets/6bb4292a-69d5-4764-abe5-fc330c0d4ac7)
 
-![Screenshot 2025-05-21 163301](https://github.com/user-attachments/assets/4dc3ff0b-9533-4acd-98d2-e24df31eb513)
 
 ## Simulation Results
 
-![Booth_multiplier](https://github.com/user-attachments/assets/1e6c6e90-4e08-494b-afda-d8aabeca5c36)
 
+![Screenshot 2025-05-29 090623](https://github.com/user-attachments/assets/948fd10d-9812-4eba-9ed3-cd3addc2e118)
 
 
 ## Results
 Successfully designed and simulated a Booth Multiplier in Verilog.
 Performed signed multiplication efficiently.
 Verified correctness using Cadence nclaunch.
+
